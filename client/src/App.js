@@ -36,7 +36,7 @@ function App() {
       <AppBar position="static" sx={{ backgroundColor: 'maroon' }}>
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Job Portal
+            Career Connect
           </Typography>
 
           {isAuthenticated ? (

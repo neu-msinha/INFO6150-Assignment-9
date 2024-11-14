@@ -17,10 +17,9 @@ const HomePage = () => {
         <Container sx={{ backgroundColor: 'black', color: 'white', minHeight: '100vh', py: 4 }}>
             <Box display="flex" flexDirection="row" justifyContent="space-between" alignItems="center" mt={4}>
                 <Box flex={1}>
-                    <Typography variant="h2" gutterBottom color="white">Welcome to the Job Portal</Typography>
+                    <Typography variant="h2" gutterBottom color="white">Welcome to Career Connect</Typography>
                     <Typography variant="h6" color="white" paragraph>
-                        Discover your dream job or showcase your company to top talent. Our platform is designed
-                        to help job seekers and employers connect seamlessly.
+                        Find your ideal role or introduce your organization to exceptional talent. Our platform bridges the gap between job seekers and employers with ease.
                     </Typography>
                     <Button
                         variant="outlined"
@@ -28,26 +27,26 @@ const HomePage = () => {
                         to="/jobs"
                         sx={buttonStyle}
                     >
-                        Explore Jobs
+                        Discover Jobs
                     </Button>
                 </Box>
                 <Box flex={1} display="flex" justifyContent="center">
-                    <img src={jobPortalImage} alt="illustration" style={{ width: '100%', maxWidth: '400px' }} />
+                    <img src={jobPortalImage} alt="job portal illustration" style={{ width: '100%', maxWidth: '400px' }} />
                 </Box>
             </Box>
 
             <Box mt={6}>
-                <Typography variant="h4" align="center" gutterBottom color="white">What We Offer</Typography>
+                <Typography variant="h4" align="center" gutterBottom color="white">Our Services</Typography>
                 <Grid container spacing={4} mt={2}>
 
                     <Grid item xs={12} sm={6} md={4}>
                         <Card sx={{ transition: 'transform 0.3s', '&:hover': { transform: 'translateY(-5px)' }, backgroundColor: 'black', color: 'white' }}>
                             <CardContent>
                                 <Typography variant="h5" component="div" gutterBottom>
-                                    Job Listings
+                                    Find a Job
                                 </Typography>
                                 <Typography variant="body2" color="white">
-                                    Browse thousands of job opportunities across different sectors and apply for roles that fit you best.
+                                    Access a diverse range of job openings across various fields and apply to those that align with your skills.
                                 </Typography>
                                 <Button
                                     variant="outlined"
@@ -55,7 +54,7 @@ const HomePage = () => {
                                     to="/jobs"
                                     sx={buttonStyle}
                                 >
-                                    View Jobs
+                                    Browse Jobs
                                 </Button>
                             </CardContent>
                         </Card>
@@ -65,10 +64,10 @@ const HomePage = () => {
                         <Card sx={{ transition: 'transform 0.3s', '&:hover': { transform: 'translateY(-5px)' }, backgroundColor: 'black', color: 'white' }}>
                             <CardContent>
                                 <Typography variant="h5" component="div" gutterBottom>
-                                    Company Showcase
+                                    Employer Profiles
                                 </Typography>
                                 <Typography variant="body2" color="white">
-                                    Explore profiles of top companies and find the right environment to kickstart your career.
+                                    Discover leading companies and find an environment where you can thrive professionally.
                                 </Typography>
                                 <Button
                                     variant="outlined"
@@ -76,7 +75,7 @@ const HomePage = () => {
                                     to="/companies"
                                     sx={buttonStyle}
                                 >
-                                    Explore Companies
+                                    View Companies
                                 </Button>
                             </CardContent>
                         </Card>
@@ -86,10 +85,10 @@ const HomePage = () => {
                         <Card sx={{ transition: 'transform 0.3s', '&:hover': { transform: 'translateY(-5px)' }, backgroundColor: 'black', color: 'white' }}>
                             <CardContent>
                                 <Typography variant="h5" component="div" gutterBottom>
-                                    Get in Touch
+                                    Support & Contact
                                 </Typography>
                                 <Typography variant="body2" color="white">
-                                    Have questions? Contact us for more information or support with your job search.
+                                    Need help? Reach out to us for assistance with your job search or platform navigation.
                                 </Typography>
                                 <Button
                                     variant="outlined"
@@ -97,7 +96,7 @@ const HomePage = () => {
                                     to="/contact"
                                     sx={buttonStyle}
                                 >
-                                    Contact Us
+                                    Reach Out
                                 </Button>
                             </CardContent>
                         </Card>
