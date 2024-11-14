@@ -32,7 +32,6 @@ const upload = multer({
 });
 
 router.post('/create', userController.createUser);
-router.post('/login', userController.loginUser);
 router.put('/edit', userController.updateUser);
 router.delete('/delete', userController.deleteUser);
 router.get('/getAll', userController.getAllUsers);

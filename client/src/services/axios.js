@@ -25,7 +25,7 @@ axios.interceptors.request.use(
 
 export const registerUser = async(email, fullName, password)=>{
     try{
-        const response = await axios.post('http://localhost:3100/users/create', {email,fullName, password})
+        const response = await axios.post('http://localhost:3001/user/create', {email,fullName, password})
         console.log(response.data)
         return response.data
     }catch(error){

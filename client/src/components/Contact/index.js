@@ -22,6 +22,19 @@ function Contact() {
         '&:hover': { backgroundColor: 'red', color: 'white' },
     };
 
+    const textFieldStyle = {
+        "& .MuiInputBase-input": { color: "white" },  // Input text color
+        "& .MuiInputLabel-root": { color: "white" },  // Label color
+        "& .MuiInputLabel-root.Mui-focused": { color: "white" }, // Label color on focus
+        "& .MuiInputLabel-root:hover": { color: "white" }, // Label color on hover
+        "& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
+            borderColor: "white"                       // Border color
+        },
+        "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": {
+            borderColor: "white"                       // Border color on focus
+        },
+    };
+
     return (
         <div className="contact-container">
             <Box className="contact-box" display="flex" flexDirection="column" alignItems="center" mt={4}>
@@ -34,7 +47,7 @@ function Contact() {
                         margin="normal"
                         fullWidth
                         onChange={handleChange}
-                        className="contact-input"
+                        sx={textFieldStyle}
                     />
                     <TextField
                         label="Email"
@@ -43,7 +56,7 @@ function Contact() {
                         margin="normal"
                         fullWidth
                         onChange={handleChange}
-                        className="contact-input"
+                        sx={textFieldStyle}
                     />
                     <TextField
                         label="Message"
@@ -54,13 +67,12 @@ function Contact() {
                         rows={4}
                         fullWidth
                         onChange={handleChange}
-                        className="contact-input"
+                        sx={textFieldStyle}
                     />
                     <Button
                         variant="contained"
                         onClick={handleSubmit}
                         fullWidth
-                        className="contact-button"
                         type="submit"
                         sx={buttonStyle}
                     >
