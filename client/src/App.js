@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Routes, NavLink, Navigate } from 'react
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 import Home from './components/Home';
 import About from './components/About';
-import JobListings from './components/JobListings';
+import Jobs from './components/Jobs';
 import Contact from './components/Contact';
-import CompanyShowcase from './components/CompanyShowcase';
+import Companies from './components/Companies';
 import Login from './components/Login';
 import Logout from './components/Logout';
 import Register from './components/Register';
@@ -102,7 +102,7 @@ function App() {
           path="/jobs"
           element={
             <ProtectedRoute isAuthenticated={isAuthenticated}>
-              <JobListings />
+              <Jobs />
             </ProtectedRoute>
           }
         />
@@ -110,7 +110,7 @@ function App() {
           path="/companies"
           element={
             <ProtectedRoute isAuthenticated={isAuthenticated}>
-              <CompanyShowcase />
+              <Companies />
             </ProtectedRoute>
           }
         />

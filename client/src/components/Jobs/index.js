@@ -1,5 +1,5 @@
 import React from 'react';
-import './jobListings.css';
+import './jobs.css';
 import { jobPosts } from '../../jobPosts';
 
 const JobListings = () => {
