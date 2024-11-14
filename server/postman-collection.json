@@ -1,0 +1,192 @@
+{
+    "info": {
+      "name": "Career Connect Backend",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Auth",
+        "item": [
+          {
+            "name": "Login",
+            "request": {
+              "method": "POST",
+              "header": [],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"username\": \"johndoe@example.com\",\n    \"password\": \"Password123!\"\n}",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              },
+              "url": {
+                "raw": "http://localhost:3001/auth/login",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3001",
+                "path": ["auth", "login"]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "User",
+        "item": [
+          {
+            "name": "Create User",
+            "request": {
+              "method": "POST",
+              "header": [],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"fullName\": \"John Doe\",\n    \"email\": \"johndoe@example.com\",\n    \"password\": \"Password123!\"\n}",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              },
+              "url": {
+                "raw": "http://localhost:3001/user/create",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3001",
+                "path": ["user", "create"]
+              }
+            }
+          },
+          {
+            "name": "Update User",
+            "request": {
+              "method": "PUT",
+              "header": [],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"email\": \"johndoe@example.com\",\n    \"fullName\": \"John Updated\",\n    \"password\": \"NewPassword123!\"\n}",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              },
+              "url": {
+                "raw": "http://localhost:3001/user/edit",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3001",
+                "path": ["user", "edit"]
+              }
+            }
+          },
+          {
+            "name": "Delete User",
+            "request": {
+              "method": "DELETE",
+              "header": [],
+              "body": {
+                "mode": "raw",
+                "raw": "{\n    \"email\": \"johndoe@example.com\"\n}",
+                "options": {
+                  "raw": {
+                    "language": "json"
+                  }
+                }
+              },
+              "url": {
+                "raw": "http://localhost:3001/user/delete",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3001",
+                "path": ["user", "delete"]
+              }
+            }
+          },
+          {
+            "name": "Get All Users",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3001/user/getAll",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3001",
+                "path": ["user", "getAll"]
+              }
+            }
+          },
+          {
+            "name": "Upload User Image",
+            "request": {
+              "method": "POST",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "multipart/form-data"
+                }
+              ],
+              "body": {
+                "mode": "formdata",
+                "formdata": [
+                  {
+                    "key": "image",
+                    "type": "file",
+                    "src": ""
+                  },
+                  {
+                    "key": "email",
+                    "value": "johndoe@example.com",
+                    "type": "text"
+                  }
+                ]
+              },
+              "url": {
+                "raw": "http://localhost:3001/user/uploadImage",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3001",
+                "path": ["user", "uploadImage"]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Company",
+        "item": [
+          {
+            "name": "Get Companies",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3001/company/",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3001",
+                "path": ["company"]
+              }
+            }
+          },
+          {
+            "name": "Get Company Image",
+            "request": {
+              "method": "GET",
+              "header": [],
+              "url": {
+                "raw": "http://localhost:3001/company_images/google.png",
+                "protocol": "http",
+                "host": ["localhost"],
+                "port": "3001",
+                "path": ["company_images", "google.png"]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
